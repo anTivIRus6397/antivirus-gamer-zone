@@ -41,8 +41,8 @@
 
 header{
     background-color: rgb(255, 254, 253);
-    padding: 50px 200px;
-    
+    padding: 20px 180px;
+      
 }
 nav{
     display: flex;
@@ -103,4 +103,62 @@ div li{
 }
 .banner-img{
     height: 600px;
+}
+
+/*main section*/
+.online-game{
+    text-align: center;
+}
+.online-game-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.paly-instantly{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.paly-discription{
+    padding-bottom: 200px;
+    
+    /* padding-right: 50px; */
+    /* font-display: reverse; */
+}
+.half-img{
+    position: relative;
+    border-radius: 8px;
+    bottom: 200px;
+    right: 150px;   
+}
+.hover-icon-first li{
+    display: grid;
+    /* justify-content: center; */
+    /* align-items: center; */
+    list-style: none;
+}
+
+/* responsive media query */
+@media screen  and (max-width:576px){
+    
+    nav,.banner,.paly-instantly,.online-game-img{
+        flex-direction: column;
+        gap: 0;
+        
+    }
+   .banner-description{
+    align-items: center;
+    /* margin-bottom: -200px; */
+  
+    
+   }
+   .banner-img,.play-img img{
+    width: 100%;
+   }
+   .half-img{
+    position: static;
+    max-width: 300px;
+   }
 }
