@@ -76,7 +76,7 @@ nav li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(201, 105, 204, 0.178);
+    background-color: rgba(243, 235, 243, 0.178);
 gap: 250px;
 }
 .banner-description{
@@ -89,7 +89,7 @@ gap: 250px;
 }
 .goat{
     margin-left: 40px;
-    color: rgba(209, 27, 233, 0.836);
+    color: rgb(201, 49, 201));
     font-weight: 800;
     margin-bottom:-10px ;
 
@@ -106,6 +106,7 @@ div li{
 }
 
 /*main section*/
+
 .online-game{
     text-align: center;
 }
@@ -115,6 +116,8 @@ div li{
     align-items: center;
     gap: 20px;
 }
+
+
 .paly-instantly{
     display: flex;
     justify-content: space-around;
@@ -133,17 +136,89 @@ div li{
     bottom: 200px;
     right: 150px;   
 }
+.hover-icon-first ul{
+    display: flex;
+    justify-content: space-around;
+    /* text-align: center; */
+    padding-top: 0px 350px;
+    cursor: pointer;
+    margin-top: -120px;
+    
+}
 .hover-icon-first li{
-    display: grid;
     /* justify-content: center; */
     /* align-items: center; */
-    list-style: none;
+    /* text-align: center; */
+    border: 2px solid rgb(204, 42, 191);
+    border-radius: 40px;
+   
+  
+}
+.hover-icon-scnd ul{
+    display: flex;
+    justify-content: space-around;
+    /* text-align: center; */
+    padding: 0px 200px;
+    cursor: pointer;
+    
+}
+.hover-icon-scnd li{
+    justify-content: center;
+    text-align: center;
+    border: 2px solid rgb(204, 42, 191);
+    border-radius: 40px;
+}
+.footer-title{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    color: white;
+    padding-top: 50px;
+}
+.footer-anchor > ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 30px;
+    padding: 5px 350px; 
+}
+.footer-anchor ul {
+    color: aliceblue;
+    
+}
+.footer-section{
+    background-color: rgb(4, 4, 31);
+}
+.footer-icon ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 500px;
+    
+}
+
+.footer-icon > ul a{
+    font-size: 30px;
+    color: white;
+}
+.last-div ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 300px;
+    color: rgb(119, 117, 117);
+}
+.last-div p{
+    text-align: center;
+    align-items: center;
+    color: rgb(119, 117, 117);
+    padding-bottom: 50px;
 }
 
 /* responsive media query */
 @media screen  and (max-width:576px){
     
-    nav,.banner,.paly-instantly,.online-game-img{
+    nav,.banner,.paly-instantly,.online-game-img ,.footer-anchor{
         flex-direction: column;
         gap: 0;
         
@@ -161,4 +236,21 @@ div li{
     position: static;
     max-width: 300px;
    }
+   .footer-section{
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: repeat(3,1fr); */
+   
+}
+.hover-icon{
+    padding-top: 140px;
+}
+.footer-icon li{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    padding:5px 20px;
+    justify-content: space-around;
+    align-items: center;
+}
 }
